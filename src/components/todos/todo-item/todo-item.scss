@@ -1,0 +1,39 @@
+@use '../../../styles/settings/helpers' as *;
+
+.todo-item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: var(--border-middle);
+	padding-bottom: rem(8);
+	column-gap: var(--offset-small);
+
+	&:not(:last-child) {
+		margin-bottom: var(--offset-small);
+	}
+
+	&__completed {
+		width: rem(50);
+		height: rem(25);
+	}
+
+	&__title {
+		width: 100%;
+		transition: var(--transition-duration);
+
+		@include hover {
+			color: var(--color-orange-dark);
+		}
+	}
+
+	&__actions {
+		& button {
+			min-width: rem(60);
+		}
+
+		& svg {
+			width: rem(25);
+			height: rem(25);
+		}
+	}
+}

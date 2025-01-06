@@ -1,0 +1,28 @@
+@use '../../../styles/settings/helpers' as *;
+
+.control-panel {
+	display: flex;
+	align-items: center;
+	margin-bottom: var(--offset-large);
+	column-gap: var(--offset-small);
+
+	&__field-input {
+		width: 100%;
+	}
+
+	&__actions {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		column-gap: var(--offset-small);
+
+		& button {
+			min-width: rem(60);
+		}
+
+		& svg {
+			width: rem(25);
+			height: rem(25);
+		}
+	}
+}

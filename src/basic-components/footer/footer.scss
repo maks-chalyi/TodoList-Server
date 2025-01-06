@@ -1,0 +1,13 @@
+@use '../../styles/settings/helpers' as *;
+
+.footer {
+	&__container {
+		padding-block: var(--offset-middle);
+		max-height: rem(60);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		column-gap: var(--offset-small);
+		border-top: var(--border-dark);
+	}
+}

@@ -1,0 +1,19 @@
+{
+  "todos": [
+    {
+      "title": "Краснодар",
+      "completed": false,
+      "id": 6
+    },
+    {
+      "title": "Якутск",
+      "completed": false,
+      "id": 7
+    },
+    {
+      "title": "Анапа",
+      "completed": false,
+      "id": 8
+    }
+  ]
+}

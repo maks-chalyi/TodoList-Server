@@ -1,0 +1,51 @@
+@use '../../styles/settings/helpers' as *;
+
+.header {
+	&__container {
+		padding-block: var(--offset-middle);
+		max-height: rem(60);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		column-gap: var(--offset-small);
+		border-bottom: var(--border-dark);
+	}
+
+	&__overlay {
+		// отключает обертку на 767px
+		@include mobile-above {
+			display: contents;
+		}
+	}
+}
+
+.menu {
+	&__list {
+		display: flex;
+		align-items: center;
+		column-gap: rem(16);
+	}
+
+	&__link {
+		color: var(--color-black-primary);
+		display: block;
+		padding: rem(6) rem(24);
+		max-height: rem(40);
+
+		&.is-active {
+			color: var(--color-orange-dark);
+			pointer-events: none;
+			border-bottom: var(--border);
+		}
+	}
+}
+
+.actions svg {
+	width: rem(20);
+	height: rem(20);
+	cursor: pointer;
+
+	@include hover {
+		fill: var(--color-orange-dark);
+	}
+}

@@ -1,0 +1,61 @@
+@use 'helpers' as *;
+
+
+:root {
+	/**
+	========== Colors ==========
+	*/
+
+	--color-white-primary: #ffffff;
+	--color-black-primary: #141414;
+	--color-blue-primary: #091e32;
+	--color-green-primary: #223206;
+	--color-braun-primary: #381707;
+
+	--color-gray-light: #f1f1f3;
+	--color-gray-middle: #cccccc;
+	--color-gray-dark: #7e7e81;
+
+	--color-black-light: #595959;
+	--color-black-middle: #333333;
+	--color-black-dark: #272727;
+
+	--color-orange-light: #ffc59b;
+	--color-orange-middle: #ffa463;
+	--color-orange-dark: #bb4e00;
+
+	--color-red-light: #e9694d;
+	--color-red-middle: #c02a2a;
+	--color-red-dark: #8B0000;
+
+	/**
+	========== Offsets ==========
+	*/
+	--container-width: #{rem(1200)};
+	--container-width-narrow: #{rem(700)};
+	--container-padding-x: #{rem(15)};
+
+	--offset-large: #{rem(36)};
+	--offset-middle: #{rem(24)};
+	--offset-small: #{rem(12)};
+
+	--input-height: #{rem(40)};
+	--button-height: #{rem(40)};
+	--button-width: #{rem(130)};
+
+	/**
+	========== Others ==========
+	*/
+
+	--font-family-base: 'Jost', sans-serif;
+	--font-family-accent: 'Ubuntu', sans-serif;
+
+	--border-light: #{rem(1)} solid var(--color-gray-light);
+	--border-middle: #{rem(1)} solid var(--color-gray-middle);
+	--border-dark: #{rem(1)} solid var(--color-gray-dark);
+	--shadow: -5px -5px 5px -5px rgba(255, 255, 255, 0.1) inset;
+	--gradient: linear-gradient(45deg,
+			var(--color-dark-15) 64%,
+			var(--color-accent-lemon) 136%);
+	--transition-duration: 0.3s;
+}
